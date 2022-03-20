@@ -1,0 +1,237 @@
+@font-face {
+  font-family: Outfit;
+  src: url(Outfit-VariableFont_wght.ttf);
+}
+
+#backgroundPrimary {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Desktop responsive query */
+@media screen and (min-width: 769px) {
+  #saleCard {
+    width: 18vw;
+    padding: 1vw;
+    border-radius: 1vw;
+  }
+  #productEquilibrium {
+    width: 18vw;
+    border-radius: 1vw;
+  }
+  #previewLayer {
+    background-color: rgba(0, 182, 158, 0.7);
+    opacity: 0;
+    width: 18vw;
+    height: 18vw;
+    border-radius: 1vw;
+    position: absolute;
+  }
+  #iconView {
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    opacity: 0;
+    top: 42%;
+  }
+  #productInfo {
+    border-bottom: 0.1vw solid hsl(215, 32%, 27%);
+  }
+  #creatorAvatar {
+    width: 1.5vw;
+    border: 0.1vw solid hsl(0, 0%, 100%);
+    border-radius: 500px;
+    margin-right: 0.5vw;
+  }
+  #creationSection {
+    margin-top: 1vw;
+  }
+
+  #iconEthereum {
+    position: relative;
+    top: 1.2vw;
+    padding-right: 0.25vw;
+  }
+
+  #iconClock {
+    position: relative;
+    top: 1vw;
+    padding-right: 0.25vw;
+  }
+
+  #productPreview {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+  }
+
+  #productPrice {
+    color: hsl(178, 100%, 50%);
+    font-family: Outfit;
+    font-weight: 400;
+  }
+
+  #productDeadline {
+    color: hsl(215, 51%, 70%);
+    font-family: Outfit;
+    font-weight: 300;
+    font-size: 1vw;
+  }
+
+  #productTitle {
+    color: hsl(0, 0%, 100%);
+    font-family: Outfit;
+    font-weight: 600;
+  }
+
+  #productDescription {
+    color: hsl(215, 51%, 70%);
+    font-family: Outfit;
+    font-weight: 300;
+    font-size: 1vw;
+  }
+}
+
+/* Mobile responsive query */
+@media screen and (max-width: 768px) {
+  #saleCard {
+    width: 75vw;
+    padding: 5vw;
+    border-radius: 3vw;
+  }
+
+  #productEquilibrium {
+    width: 75vw;
+    border-radius: 3vw;
+  }
+
+  #previewLayer {
+    background-color: rgba(0, 182, 158, 0.7);
+    opacity: 0;
+    width: 75vw;
+    height: 75vw;
+    border-radius: 1vw;
+    position: absolute;
+  }
+  #iconView {
+    width: 16vw;
+    height: 16vw;
+    position: absolute;
+    opacity: 0;
+    top: 42%;
+  }
+  #productInfo {
+    border-bottom: 0.5vw solid hsl(215, 32%, 27%);
+  }
+
+  #creatorAvatar {
+    width: 8vw;
+    border: 0.1vw solid hsl(0, 0%, 100%);
+    border-radius: 500px;
+    margin-right: 5vw;
+  }
+
+  #creationSection {
+    margin-top: 5vw;
+  }
+
+  #iconEthereum {
+    position: relative;
+    top: 5vw;
+    padding-right: 2vw;
+  }
+
+  #iconClock {
+    position: relative;
+    top: 4.6vw;
+    padding-right: 2vw;
+  }
+
+  #productPreview {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+  }
+
+  #productPrice {
+    color: hsl(178, 100%, 50%);
+    font-family: Outfit;
+    font-weight: 400;
+  }
+
+  #productDeadline {
+    color: hsl(215, 51%, 70%);
+    font-family: Outfit;
+    font-weight: 300;
+    font-size: 4.5vw;
+  }
+
+  #productTitle {
+    color: hsl(0, 0%, 100%);
+    font-family: Outfit;
+    font-weight: 550;
+    font-size: 6vw;
+  }
+
+  #productDescription {
+    color: hsl(215, 51%, 70%);
+    font-family: Outfit;
+    font-weight: 300;
+    font-size: 4.5vw;
+  }
+}
+
+#saleCard {
+  background-color: hsl(216, 50%, 16%);
+}
+
+#productInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+#creationSection {
+  display: flex;
+}
+
+#creationInfo {
+  display: flex;
+}
+
+#creation {
+  color: hsl(215, 51%, 70%);
+  font-family: Outfit;
+  font-weight: 300;
+}
+
+#creatorName {
+  color: hsl(0, 0%, 100%);
+  font-family: Outfit;
+  font-weight: 300;
+}
+
+#iconEthereum {
+  margin: 0;
+}
+
+#pricingSection {
+  display: flex;
+}
+
+#deadlineSection {
+  display: flex;
+}
+
+#previewLayer:hover {
+  opacity: 0.5;
+}
+
+#previewLayer:hover ~ #iconView {
+  opacity: 1;
+}
